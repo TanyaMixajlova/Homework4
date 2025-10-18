@@ -26,17 +26,15 @@ public class Main {
         byte airTemperature = scanner.nextByte();
         if (airTemperature < 5) {
             System.out.println("На улице " + airTemperature + " градусов, нужно надеть шапку");
-        }
-        if (airTemperature > 5) {
+        } else {
             System.out.println("На улице " + airTemperature + " градусов, можно идти без шапки");
         }
         System.out.println("задача 3 ");
         System.out.println("Введите скорость транспорта");
         byte vehicleSpeed = scanner.nextByte();
-        if (vehicleSpeed < 60) {
+        if (vehicleSpeed <= 60) {
             System.out.println("Если скорость " + vehicleSpeed + ", то можно ездить спокойно");
-        }
-        if (vehicleSpeed > 60) {
+        } else {
             System.out.println("Если скорость  " + vehicleSpeed + ", то придется заплатить штраф");
         }
         System.out.println("задача 4 ");
@@ -44,11 +42,11 @@ public class Main {
         byte agePerson = scanner.nextByte();
         if (agePerson <= 6 && agePerson >= 2) {
             System.out.println("Если возраст человека равен " + agePerson + ", то ему нужно ходить в детский сад");
-        }
-        if (agePerson <= 24 && agePerson >= 18) {
+        } else if (agePerson <= 17 && agePerson >= 7) {
+            System.out.println("Если возраст человека равен " + agePerson + ", то ему нужно ходить в школу");
+        } else if (agePerson <= 24 && agePerson >= 18) {
             System.out.println("Если возраст человека равен " + agePerson + ", то ему нужно ходить в университет");
-        }
-        if (agePerson > 24) {
+        } else {
             System.out.println("Если возраст человека равен " + agePerson + ", то ему пора ходить на работу");
         }
         System.out.println("задача 5 ");
@@ -56,11 +54,9 @@ public class Main {
         byte childAge = scanner.nextByte();
         if (childAge < 5) {
             System.out.println("Если возраст ребенка равен " + childAge + ", то ему нельзя кататься на аттракционе");
-        }
-        if (childAge < 14 && childAge >= 5) {
+        } else if (childAge < 14) {
             System.out.println("Если возраст ребенка равен " + childAge + ", то ему можно кататься на аттракционе в сопровождении взрослого");
-        }
-        if (childAge >= 14) {
+        } else {
             System.out.println("Если возраст ребенка равен " + childAge + ", то ему можно кататься на аттракционе без сопровождении взрослого");
         }
         System.out.println("задача 6 ");
