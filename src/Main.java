@@ -4,8 +4,8 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Сколько вам лет?");
-        byte refund = scanner.nextByte();
-        if (refund >= 18) {
+        byte age = scanner.nextByte();
+        if (age >= 18) {
             System.out.println("человеку 18 или больше лет.");
         } else {
             System.out.println("Возраст совершеннолетия еще не наступил, нужно немного подождать.");
@@ -14,9 +14,9 @@ public class Main {
             System.out.println("задача 1 второй способ");
         }
         System.out.println("Сколько вам лет?");
-        byte refund2 = scanner.nextByte();
-        boolean refund3 = refund2 >= 18;
-        if (refund3) {
+        byte age2 = scanner.nextByte();
+        boolean age3 = age2 >= 18;
+        if (age3) {
             System.out.println("человеку 18 или больше лет.");
         } else {
             System.out.println("Возраст совершеннолетия еще не наступил, нужно немного подождать.");
